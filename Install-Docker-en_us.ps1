@@ -28,4 +28,4 @@ Install-Package -Name docker -ProviderName DockerMsftProvider -Force | Out-Null
 
 Write-Host "The server will reboot in 10 Seconds"
 
-Restart-Computer -Delay 10
+Restart-Computer
