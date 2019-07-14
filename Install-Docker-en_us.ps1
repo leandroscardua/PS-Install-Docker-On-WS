@@ -2,7 +2,7 @@
 
 # Update the NuGet Module
 
-Write-Host "Atualizando o Gerenciador de Pacotes Nuget"
+Write-Host "Updating The Nuget Package Management"
 
 Install-PackageProvider -Name NuGet -Force | Out-Null
 
