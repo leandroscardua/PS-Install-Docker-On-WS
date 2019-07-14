@@ -17,4 +17,4 @@ Install-Package -Name docker -ProviderName DockerMsftProvider
 
 # Uma reinicialização é requerida, devido a instalação do Windows Feature Containers e alterações pertinentes no sistema.
 Write-Host "O Servidor será reiniciado em 10 Segundos"
-Restart-Computer -Delay 10 -Force
+Restart-Computer
