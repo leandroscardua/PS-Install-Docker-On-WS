@@ -26,6 +26,8 @@ Install-Package -Name docker -ProviderName DockerMsftProvider -Force | Out-Null
 
 # A reboot is required to complete the Docker Installation 
 
+pause
+
 Write-Host "The server will reboot in 10 Seconds"
 
 Restart-Computer
