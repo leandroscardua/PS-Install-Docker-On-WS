@@ -16,5 +16,7 @@ Write-Host "Instalando a Interface de Gerenciamento do Docker"
 Install-Package -Name docker -ProviderName DockerMsftProvider
 
 # Uma reinicialização é requerida, devido a instalação do Windows Feature Containers e alterações pertinentes no sistema.
+pause
+
 Write-Host "O Servidor será reiniciado em 10 Segundos"
 Restart-Computer
