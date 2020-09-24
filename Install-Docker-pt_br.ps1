@@ -1,4 +1,7 @@
 #Requires -RunAsAdministrator
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 # Atualizar o Gerenciador de Pacotes NuGet para poder baixar a ultima versao do Docker.
 Write-Host "Atualizando o Gerenciador de Pacotes Nuget"
 Install-PackageProvider -Name NuGet -Force
