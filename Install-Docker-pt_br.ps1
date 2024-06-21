@@ -12,11 +12,11 @@ Install-WindowsFeature -Name Containers
 
 # Instalar o Docker Engine Enterprise no Servidor
 Write-Host "Instalando o Docker Engine Enterprise"
-Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+Install-Module -Name DockerProvider -Repository PSGallery -Force
 
 # Instalar a interface cliente para gerenciar o Docker Engine Enterprise
 Write-Host "Instalando a Interface de Gerenciamento do Docker"
-Install-Package -Name docker -ProviderName DockerMsftProvider
+Install-Package -Name docker -ProviderName DockerProvider
 
 # Uma reinicialização é requerida, devido a instalação do Windows Feature Containers e alterações pertinentes no sistema.
 pause
