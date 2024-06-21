@@ -16,13 +16,13 @@ Install-WindowsFeature -Name Containers | Out-Null
 
 Write-Host "Installing Docker Engine Enterprise"
 
-Install-Module -Name DockerMsftProvider -Repository PSGallery -Force | Out-Null
+Install-Module -Name DockerProvider -Repository PSGallery -Force | Out-Null
 
 # Install the client interface to manage the Docker Engine Enterprise
 
 Write-Host "Installing Interface de Gerenciamento of the Docker"
 
-Install-Package -Name docker -ProviderName DockerMsftProvider -Force | Out-Null
+Install-Package -Name docker -ProviderName DockerProvider -Force | Out-Null
 
 # A reboot is required to complete the Docker Installation 
 
